@@ -99,3 +99,11 @@ python med_rag_demo.py
 ```
 
 The demo script supports both chatting with and without RAG.
+
+
+
+
+
+## Pretrained Model
+
+You can download them from https://jbox.sjtu.edu.cn/l/WH179X .
