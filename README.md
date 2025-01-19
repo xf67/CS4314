@@ -8,12 +8,11 @@ This is the course project of CS4314 (Natural Language Processing).
 
 ## Instruction Tuning
 
-` python finetune_l.py `
+` python finetune_l.py ` is the code for instruction tuning.
 
 ### Usage
 
 You can modify the parameters in the bottom of the `finetune_l.py` file.
-
 
 For example:
 
@@ -66,3 +65,22 @@ Special Parameters:
 
 ## Chatbot
 
+`chatbot_l.py` is the chatbot that uses the finetuned model.
+
+You need to set the `model_path` parameter to the path of the finetuned model in the `main` function.
+
+And if you use LoRA, you need to set the `lora_path` parameter to the path of the LoRA model afterwards.
+
+For example:
+
+```python
+    model_path = "./Qwen2.5-3B"
+    lora_path = "./outputs/Qwen3B/checkpoint-25880"
+```
+
+Or 
+
+```python
+    lora_path = None
+    model_path = "./Qwen2.5-0.5B"
+```
