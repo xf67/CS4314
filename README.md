@@ -84,3 +84,16 @@ Or
     lora_path = None
     model_path = "./Qwen2.5-0.5B"
 ```
+
+## RAG demo
+
+The knowledge base(downloaded from PubMed) used in the RAG demo is given in `rag_knowledgebase.json`. 
+
+You can run the RAG demo by
+```
+python med_rag_demo.py
+    -- model_path = MODEL_PATH
+    -- json_file = JSON_FILE_PATH
+```
+
+The demo script supports both chatting with and without RAG.
